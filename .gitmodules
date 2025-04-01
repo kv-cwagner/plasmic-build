@@ -1,0 +1,3 @@
+[submodule "plasmic"]
+	path = plasmic
+	url = git@github.com:plasmicapp/plasmic.git
