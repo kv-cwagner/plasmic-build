@@ -53,5 +53,10 @@ yarn bootstrap
 yarn make
 # The below reverts the boostrap.sh to it's origina value to avoid a git differentce. Eventually the goal should be to submit a package to update bootstrap.bash 
 sed -i 's/\(for package in packages\/loader-angular packages\/react-web-runtime platform\/host-test\) platform\/loader-html-hydrate platform\/react-web-bundle platform\/live-frame platform\/canvas-packages platform\/sub platform\/wab;/\1;/' scripts/bootstrap.sh
+sed -i \
+  -e 's|import { DEFAULT_DATABASE_URI } from "@/wab/server/config";|import { loadConfig } from "@/wab/server/config";|' \
+  -e '/const con = await ensureDbConnection(DEFAULT_DATABASE_URI, "default");/c\
+  const config = loadConfig();\
+  const con = await ensureDbConnection(config.databaseUri, "default");' /workspaces/plasmic-build/plasmic/platform/wab/src/wab/server/db/DbInit.ts
 cp /workspaces/plasmic-build/.devcontainer/.env.example.development /workspaces/plasmic-build/plasmic/platform/wab/.env
 cd /workspaces/plasmic-build/
