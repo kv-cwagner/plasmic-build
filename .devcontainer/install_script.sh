@@ -58,5 +58,5 @@ sed -i \
   -e '/const con = await ensureDbConnection(DEFAULT_DATABASE_URI, "default");/c\
   const config = loadConfig();\
   const con = await ensureDbConnection(config.databaseUri, "default");' /workspaces/plasmic-build/plasmic/platform/wab/src/wab/server/db/DbInit.ts
-cp /workspaces/plasmic-build/.devcontainer/.env.example.development /workspaces/plasmic-build/plasmic/platform/wab/.env
+cp /workspaces/plasmic-build/.env.development /workspaces/plasmic-build/plasmic/platform/wab/.env
 cd /workspaces/plasmic-build/
