@@ -4,10 +4,11 @@
 
 # List of scripts to source
 scripts=(
-  "scripts/migrate_dev_bundles.sh"
-  "scripts/run_schema_migrations.sh"
-  "scripts/seed_database.sh"
-  "scripts/update_plume.sh"
+  "build_scripts/setup_database.sh"
+  "build_scripts/migrate_dev_bundles.sh"
+  "build_scripts/run_schema_migrations.sh"
+  "build_scripts/seed_database.sh"
+  "build_scripts/update_plume.sh"
 )
 
 # Save the original working directory
