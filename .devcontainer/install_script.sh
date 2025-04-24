@@ -59,4 +59,7 @@ sed -i \
   const config = loadConfig();\
   const con = await ensureDbConnection(config.databaseUri, "default");' /workspaces/plasmic-build/plasmic/platform/wab/src/wab/server/db/DbInit.ts
 cp /workspaces/plasmic-build/.env.development /workspaces/plasmic-build/plasmic/platform/wab/.env
+mkdir /home/vscode/.aws/
+cp /workspaces/plasmic-build/aws_config /home/vscode/.aws/config
+cp /workspaces/plasmic-build/aws_credentials /home/vscode/.aws/credentials 
 cd /workspaces/plasmic-build/

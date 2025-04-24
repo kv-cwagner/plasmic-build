@@ -1,0 +1,7 @@
+[default]
+region = us-east-1
+services = local-s3
+
+[services local-s3]
+s3 =
+  endpoint_url = http://storage:8000
