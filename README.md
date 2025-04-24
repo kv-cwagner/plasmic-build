@@ -59,6 +59,8 @@ If you're using the Plasmic Platform but not modifying it, build from the Docker
 
 We'll be publishing a prebuilt image based on this flow soon, along with usage instructions.
 
+Note: As of now, the Dockerfile only functions properly within the devcontainer setup. This is likely due to dependencies and structure specific to the Plasmic monorepo. We plan to investigate a standalone fix in the future.
+
 ## Docker Image Publishing
 
 - We now are pushing Docker images of the Plasmic platform with the intention that it can be used alongside Plasmic.
@@ -67,7 +69,7 @@ We'll be publishing a prebuilt image based on this flow soon, along with usage i
 - We plan to provide instructions and/or examples (for the time being) that support a devcontainer environment in a near future update.
 - Production instructions will be out of scope for the foreseeable future in this repository.
 
-## Immediate Roadmap
+## Roadmap
 
 We have other priorities at the moment, but the following items are in progress to stabilize our current dev workflow:
 
