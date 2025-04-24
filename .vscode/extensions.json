@@ -1,0 +1,7 @@
+{
+    "recommendations": [
+        "mhutchie.git-graph",
+        "necatiarslan.aws-s3-vscode-extension",
+        "ms-vscode-remote.remote-containers"
+    ]
+}
