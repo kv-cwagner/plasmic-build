@@ -67,8 +67,6 @@ ENV PATH="/home/vscode/.asdf/shims:${BREW_PATH}:${PATH}"
 COPY --chown=vscode:vscode plasmic/ /workspaces/plasmic-build/plasmic/
 COPY --chown=vscode:vscode build_scripts/ /workspaces/plasmic-build/build_scripts/
 COPY --chown=vscode:vscode .devcontainer/ /workspaces/plasmic-build/.devcontainer/
-COPY --chown=vscode:vscode aws_config /home/vscode/.aws/config
-COPY --chown=vscode:vscode aws_credentials /home/vscode/.aws/credentials
 
 # Run project setup commands from the plasmic directory
 WORKDIR /workspaces/plasmic-build/plasmic
