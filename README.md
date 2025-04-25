@@ -57,9 +57,11 @@ Use the .devcontainer folder and VSCode to boot into an environment that’s tai
 
 If you're using the Plasmic Platform but not modifying it, build from the Dockerfile at the root of the repo. This replicates the install_script.sh steps but bakes them into a container image suitable for app development and deployment.
 
-We'll be publishing a prebuilt image based on this flow soon, along with usage instructions.
+We now publish Dockerfiles as part of this repository:  
+https://github.com/kv-cwagner/plasmic-build/pkgs/container/plasmic-build
 
-Note: As of now, the Dockerfile only functions properly within the devcontainer setup. This is likely due to dependencies and structure specific to the Plasmic monorepo. We plan to investigate a standalone fix in the future.
+Additionally, we’ve created a separate example specifically for application development that utilizes the published Docker image:  
+https://github.com/kv-cwagner/plasmic-build-app-example
 
 ## Docker Image Publishing
 
@@ -69,11 +71,12 @@ Note: As of now, the Dockerfile only functions properly within the devcontainer 
 - We plan to provide instructions and/or examples (for the time being) that support a devcontainer environment in a near future update.
 - Production instructions will be out of scope for the foreseeable future in this repository.
 
+Note: As of now, the Dockerfile only functions properly within the devcontainer setup. This is likely due to dependencies and structure specific to the Plasmic monorepo. We plan to investigate a standalone fix in the future.
+
 ## Roadmap
 
 We have other priorities at the moment, but the following items are in progress to stabilize our current dev workflow:
 
-- Examples for App Development Via the Root Dockerfile
 - Optimize the root Dockerfile
 - Continue to improve and consolidate provisioning
 - Open upstream PRs once internal use is stable
